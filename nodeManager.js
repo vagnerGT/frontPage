@@ -1,6 +1,6 @@
 
 window.addEventListener("load", function (){
-    document.body.style.display = "block";
+    document.body.style.display = "flex";
 });
 
 //node Object

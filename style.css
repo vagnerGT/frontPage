@@ -7,10 +7,10 @@
     --black: black;
     --white: white;
     --lightgrey: rgb(218, 218, 218);
-    --grey: rgb(153, 153, 153);
-    --darkblue: #002bb8;
+    --grey: rgb(129, 129, 129);
+    --darkblue: #002394;
     --blue: #0077ff;
-    --lightblue: #00d9ff;
+    --lightblue: #8fd9e7;
 }
 
 *  { 
@@ -27,6 +27,7 @@ html {
 
 body {
     background-color: var(--lightgrey);
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     font-family: varela-round;
@@ -45,10 +46,14 @@ a {
 
 h2 {
     font-size: 2em;
+    line-height: 150%;
+    color: var(--black);
 }
 
 p {
     font-size: 1em;
+    line-height: 150%;
+    color: var(--grey);
 }
 
 button:hover {
@@ -190,61 +195,39 @@ button:hover {
 .banner {
     background-color: transparent;
     position: relative;
-    padding-top: 5vw;
-    align-items: flex-end;
+    height: 42vw;
+    align-items: center;
 }
 
-.banner > #div1 {
+.banner > #banner-div1 {
     z-index: 2;
     width: 60vw;
-    height: 35vw;
     justify-content: center;
 }
 
-.banner > #div1 > img {
+.banner > #banner-div1 > img {
     width: min(3vw, 20px);
-    margin: 1vw 2vw;
+    margin: min(1vw, 10px) min(2.5vw, 20px);
     cursor: pointer;
 }
 
-.banner > #div2 {
+.banner > #banner-div2 {
     z-index: 2;
     box-sizing: content-box;
     width: min(45vw, 400px);
+    padding-top: 10vw;
     margin: 0 5vw;
-    height: min(fit-content, 100vw);
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
 }
 
-.banner > #div2 > h2 {
+.banner > #banner-div2 > h2 {
     color: var(--white);
     font-size: 1.8em;
 }
 
-.banner > #div2 > p {
+.banner > #banner-div2 > p {
     color: var(--lightgrey);
     font-size: 0.8em;
-}
-
-.banner > #div2 > button {
-    color: var(--blue);
-    transition: 
-        background-position 0.5s ease-out,
-        color 0.4s ease-in;
-    font-family: varela-round;
-    font-size: 2em;
-    font-weight: bold;
-    background: linear-gradient(to right, transparent 50%, var(--blue) 50%);
-    background-size: 200% 100%;
-    border: 0.1em solid var(--blue);
-    margin-top: 1vw;
-    padding: 0.2em 1em;
-    outline: none;
-}
-
-.banner > #div2 > button:hover {
-    background-position: 100%;
-    color: var(--white);
 }
 
 
@@ -256,8 +239,30 @@ button:hover {
     width: 100%;
 }
 
+.headphones {
+    margin-top: min(5vw, 50px);
+    justify-content: left;
+    align-items: center;
+    height: min(40vw, 400px);
+    background: linear-gradient(to right, var(--lightgrey) 40%, var(--white));
+}
 
-/* ---- */
+.headphones img {
+    border-left: 0.5vw solid var(--blue);
+    background-color: var(--blue);
+    width: min(35vw, 300px);
+}
+
+.headphones #headphones-div1 {
+    margin: 0 min(5vw, 50px);
+}
+
+.headphones #headphones-div2 {
+    width: min(50vw, 500px);
+}
+
+
+/* -------------------------------------------------- */
 
 .noselect {
     -webkit-touch-callout: none;
@@ -276,6 +281,28 @@ button:hover {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.fill-blue-button {
+    color: var(--blue);
+    transition: 
+        background-position 0.5s ease-out,
+        color 0.4s ease-in;
+    font-family: varela-round;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, transparent 50%, var(--blue) 50%);
+    background-size: 220% 100%;
+    border: 0.1em solid var(--blue);
+    padding: 0.2em 1em;
+    outline: none;
+    width: fit-content;
+}
+
+.fill-blue-button:hover {
+    background-position: 99%;
+    color: var(--white);
 }
 
 .selected {
@@ -302,6 +329,18 @@ button:hover {
 
 .dark-hover:hover {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.margin-bottom-1 {
+    margin-bottom: min(1vw, 10px);
+}
+
+.margin-bottom-2 {
+    margin-bottom: min(2vw, 20px);
+}
+
+.margin-bottom-4 {
+    margin-bottom: min(4vw, 40px);
 }
 
 .disabled {

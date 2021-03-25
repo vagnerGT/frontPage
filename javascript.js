@@ -31,7 +31,7 @@ nodes.list["banner"].onScreenResize(function () {
 });
 
 nodes.list["explore-button"].onClick(function () {
-    this.animation.run("stretch");
+    //this.animation.run("stretch");
 });
 
 nodes.list["facebook-icon"].onClick(function () {
