@@ -332,8 +332,21 @@ button:hover {
 }
 
 .footer {
+    padding: min(2vw, 20px);
     background-color: var(--black);
-    min-height: 100px;
+    justify-content: space-around;
+}
+
+.footer h3 {
+    margin-bottom: min(1vw, 10px);
+    color: var(--white);
+    font-size: 1em;
+}
+
+.footer a {
+    margin-bottom: min(1vw, 10px);
+    color: var(--white);
+    font-size: 0.5em;
 }
 
 
