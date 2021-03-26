@@ -6,7 +6,7 @@
 :root {
     --black: black;
     --white: white;
-    --lightgrey: rgb(218, 218, 218);
+    --lightgrey: rgb(224, 224, 224);
     --grey: rgb(129, 129, 129);
     --darkblue: #002394;
     --blue: #0077ff;
@@ -46,6 +46,12 @@ a {
 
 h2 {
     font-size: 2em;
+    line-height: 150%;
+    color: var(--black);
+}
+
+h3 {
+    font-size: 1em;
     line-height: 150%;
     color: var(--black);
 }
@@ -193,9 +199,10 @@ button:hover {
 }
 
 .banner {
+    margin-bottom: min(10vw, 100px);
     background-color: transparent;
     position: relative;
-    height: 42vw;
+    height: 43vw;
     align-items: center;
 }
 
@@ -240,7 +247,7 @@ button:hover {
 }
 
 .headphones {
-    margin-top: min(5vw, 50px);
+    margin-bottom: min(10vw, 100px);
     justify-content: left;
     align-items: center;
     height: min(40vw, 400px);
@@ -262,7 +269,7 @@ button:hover {
 }
 
 .professional-audio {
-    margin-top: min(5vw, 50px);
+    margin-bottom: min(10vw, 100px);
     justify-content: flex-end;
     align-items: center;
     height: min(40vw, 400px);
@@ -281,6 +288,52 @@ button:hover {
 
 .professional-audio #professional-audio-div2 {
     width: min(50vw, 500px);
+}
+
+.why {
+    background-color: var(--white);
+    padding: min(2vw, 20px) 0;
+    text-align: center;
+    width: 100%;
+    font-size: clamp(15px, 2vw, 20px);
+}
+
+.why > #why-title > h2 {
+    color: var(--blue);
+    font-size: 2em;
+}
+
+.why > #why-content {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.why > #why-content > div {
+    padding: min(2vw, 20px);
+    background: linear-gradient(to bottom, var(--white), var(--lightgrey));
+    margin: 0 1vw;
+    margin-bottom: min(10vw, 100px);
+    justify-content: flex-start;
+    align-items: center;
+    width: clamp(150px, 20vw, 200px);
+}
+
+.why h3 {
+    font-size: 1em;
+}
+
+.why p {
+    font-size: 0.75em;
+}
+
+.why img {
+    height: min(5vw, 50px);
+    margin-bottom: min(1vw, 10px);
+}
+
+.footer {
+    background-color: var(--black);
+    min-height: 100px;
 }
 
 
