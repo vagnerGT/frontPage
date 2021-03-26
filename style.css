@@ -261,6 +261,28 @@ button:hover {
     width: min(50vw, 500px);
 }
 
+.professional-audio {
+    margin-top: min(5vw, 50px);
+    justify-content: flex-end;
+    align-items: center;
+    height: min(40vw, 400px);
+    background: linear-gradient(to left, var(--lightgrey) 40%, var(--white));
+}
+
+.professional-audio img {
+    border-right: 0.5vw solid var(--blue);
+    background-color: var(--blue);
+    width: min(35vw, 300px);
+}
+
+.professional-audio #professional-audio-div1 {
+    margin: 0 min(5vw, 50px);
+}
+
+.professional-audio #professional-audio-div2 {
+    width: min(50vw, 500px);
+}
+
 
 /* -------------------------------------------------- */
 
